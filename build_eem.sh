@@ -9,7 +9,7 @@ if [ -z "$(which rpi-source)" ]; then
 fi
 
 # Unfortunately the rpi-source script only runs for python2 so we need to make sure it runs with python2
-sed -i "s+#!/usr/bin/env python+#!/usr/bin/env python2+g" .config
+sudo sed -i "s+#!/usr/bin/env python+#!/usr/bin/env python2+g" /usr/bin/rpi-source
 
 # around 150 Mo
 rpi-source --nomake
