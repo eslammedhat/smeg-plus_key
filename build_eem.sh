@@ -1,4 +1,5 @@
 #!/bin/bash
+set -ex
 
 sudo apt install bison flex libssl-dev python2
 
